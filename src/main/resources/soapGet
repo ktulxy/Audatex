@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://serviceinterface_v1.b2b.audatex.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getTaskListRequest>
+         <!--Zero or more repetitions:-->
+         <ser:parameter xsltParameter="?" context="?">
+            <ser:name>loginId</ser:name>
+            <ser:value>ingo.b2b</ser:value>
+         </ser:parameter>
+          <ser:parameter xsltParameter="?" context="?">
+            <ser:name>password</ser:name>
+            <ser:value>ingo.b2b</ser:value>
+         </ser:parameter>
+
+         <!--Optional:-->
+         <ser:payload>?</ser:payload>
+      </ser:getTaskListRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
