@@ -76,19 +76,12 @@ public class testSoap {
             e1.printStackTrace();
         }
         String line;
-        String respond = "";
-        try {
-            respond = rd.readLine();
-            while ((line = rd.readLine()) != null)
-                respond = line;
-
-        } catch (IOException e1) {
+             try {
+                   while ((line = rd.readLine()) != null)
+                System.out.println("Ответ " + line); //
+                     } catch (IOException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
-        System.out.println("Запрос " + request);
-        System.out.println("Ответ " + respond);
-
-
     }
 }
