@@ -29,14 +29,15 @@ given()
     @Test
     public void Test2(){
 
+       JSONObject bodyRest = new JSONObject();
+        bodyRest.put("loginId","ingo.b2b");
+        bodyRest.put("password","ingo.b2b");
         RestAssured
                 .given()
-
-
-                .post("http://soabalancertest.ingo.office:8011/Audatex/Audatex_REST/getTaskList")
+                .contentType("text/xml")
+                .body(bodyRest.toString())
+                .post("https://www-a.audatex.net/b2b/services/TaskService_v1?WSDL")
                 .then().log().all();
-
-
     }
 }
 
