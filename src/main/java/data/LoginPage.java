@@ -1,11 +1,7 @@
-package pages;
+package data;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.conditions.Text;
 import org.openqa.selenium.By;
-import org.xml.sax.Locator;
-
-import javax.xml.xpath.XPath;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
