@@ -1,7 +1,6 @@
 package api;
 
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,9 +9,8 @@ import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Scanner;
 
-public class CreateSoap {
+public class CreateTask {
 
     public static void main(String args[]) throws Exception {
         String addr = "https://www-a.audatex.net/b2b/services/TaskService_v1";

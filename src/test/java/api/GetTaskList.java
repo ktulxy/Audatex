@@ -9,9 +9,8 @@ import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Scanner;
 
-public class testSoap {
+public class GetTaskList {
     public static void main(String args[]) throws Exception {
 
         String addr = "https://www-a.audatex.net/b2b/services/TaskService_v1";
