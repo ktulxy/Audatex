@@ -1,5 +1,8 @@
 package api;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,10 +10,11 @@ import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Scanner;
 
 public class CreateSoap {
-    public static void main(String args[]) throws Exception {
 
+    public static void main(String args[]) throws Exception {
         String addr = "https://www-a.audatex.net/b2b/services/TaskService_v1";
         String request = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://serviceinterface_v1.b2b.audatex.com\">\n" +
                 "   <soapenv:Header/>\n" +
@@ -38,7 +42,7 @@ public class CreateSoap {
                 "        </ser:parameter>\n" +
                 "        <ser:payload>\n" +
                 "            <Task xmlns=\"http://intrasystems.com.ua/Audatex-REST\">\n" +
-                "                <ClaimNumber>Auto001</ClaimNumber>\n" +
+                "                <ClaimNumber>ClaimNumber№</ClaimNumber>\n" +
                 "                <Versions>\n" +
                 "                    <GeneratorVersion>INGO.AIS.05.10.2016</GeneratorVersion>\n" +
                 "                    <Generator>GENCODE000191</Generator>\n" +
@@ -166,13 +170,13 @@ public class CreateSoap {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
-        String line;
-        try {
-            while ((line = rd.readLine()) != null)
-                System.out.println("Ответ " + line); //
-        } catch (IOException e1) {
-            // TODO Auto-generated catch block
-            e1.printStackTrace();
-        }
-    }
+    String line=rd.readLine();
+   // System.out.println("Otvet 1 " + line);
+        String resultStr = line.substring(line.indexOf("text") + 5, line.indexOf("/text") -1);
+        Assert.assertEquals(resultStr, "Operation terminated successfully");
+        String resultTask = line.substring(line.indexOf("taskId") + 7, line.indexOf("/taskId") -1);
+     //System.out.println("Otvet TaskID " + resultTask);
+
+
+}
 }
