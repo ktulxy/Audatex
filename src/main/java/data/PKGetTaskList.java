@@ -21,11 +21,11 @@ public class PKGetTaskList {
                 "         <!--Zero or more repetitions:-->\n" +
                 "         <ser:parameter xsltParameter=\"?\" context=\"?\">\n" +
                 "            <ser:name>loginId</ser:name>\n" +
-                "            <ser:value>ingo.b2b</ser:value>\n" +
+                "            <ser:value>***</ser:value>\n" +
                 "         </ser:parameter>\n" +
                 "          <ser:parameter xsltParameter=\"?\" context=\"?\">\n" +
                 "            <ser:name>password</ser:name>\n" +
-                "            <ser:value>ingo.b2b</ser:value>\n" +
+                "            <ser:value>***</ser:value>\n" +
                 "         </ser:parameter>\n" +
                 "\n" +
                 "         <!--Optional:-->\n" +
@@ -78,18 +78,8 @@ public class PKGetTaskList {
             e1.printStackTrace();
         }
         String line=rd.readLine();
-     //   System.out.println("Otvet 1 " + line);
         String resultGet = line.substring(line.indexOf("text") + 5, line.indexOf("/text") -1);
         return resultGet;
-     //   Assert.assertEquals(resultStr, "Operation terminated successfully");
-       /*
-           String linea;
-            try {
-                   while ((linea = rd.readLine()) != null)
-                System.out.println("Ответ " + linea);
-                     } catch (IOException e1) {
-            // TODO Auto-generated catch block
-            e1.printStackTrace();
-        }*/
+
     }
 }

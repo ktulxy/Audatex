@@ -25,11 +25,11 @@ public class PKCreateTask {
                 "        </ser:parameter>\n" +
                 "        <ser:parameter>\n" +
                 "            <ser:name>password</ser:name>\n" +
-                "            <ser:value>ingo.b2b</ser:value>\n" +
+                "            <ser:value>***</ser:value>\n" +
                 "        </ser:parameter>\n" +
                 "        <ser:parameter>\n" +
                 "            <ser:name>processAsUser</ser:name>\n" +
-                "            <ser:value>ingo.b2b</ser:value>\n" +
+                "            <ser:value>***</ser:value>\n" +
                 "        </ser:parameter>\n" +
                 "        <ser:parameter>\n" +
                 "            <ser:name>identifyVehicle</ser:name>\n" +
@@ -52,14 +52,14 @@ public class PKCreateTask {
                 "                <BasicClaimData>\n" +
                 "                    <Vehicle>\n" +
                 "                        <VehicleIdentification>\n" +
-                "                            <ManufacturerName>MINI</ManufacturerName>\n" +
-                "                            <ModelName>Cooper</ModelName>\n" +
-                "                            <ManufacturerCodeAX>19</ManufacturerCodeAX>\n" +
-                "                            <ModelCodeAX>31</ModelCodeAX>\n" +
-                "                            <VIN>WMWXM510203A24295</VIN>\n" +
+                "                            <ManufacturerName>TOYOTA</ManufacturerName>\n" +
+                "                            <ModelName>Camry</ModelName>\n" +
+                "                            <ManufacturerCodeAX>70</ManufacturerCodeAX>\n" +
+                "                            <ModelCodeAX>CR</ModelCodeAX>\n" +
+                "                            <VIN>JTNBF4HK403017527</VIN>\n" +
                 "                        </VehicleIdentification>\n" +
                 "                        <VehicleAdmin>\n" +
-                "                            <PlateNumber>AA0000AA</PlateNumber>\n" +
+                "                            <PlateNumber>KA0002AC</PlateNumber>\n" +
                 "                            <AcquisitionDate>2012-06-16</AcquisitionDate>\n" +
                 "                            <VehicleOwner>\n" +
                 "                                <CompanyName>If Owner is company</CompanyName>\n" +

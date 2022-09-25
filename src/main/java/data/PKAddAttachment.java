@@ -1,7 +1,4 @@
 package data;
-
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,11 +6,7 @@ import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
 public class PKAddAttachment {
-
-
-
     public static String addAttachmentPK() throws Exception {
 
         String addr = "https://www-a.audatex.net/b2b/services/AttachmentService_v1";
@@ -23,11 +16,11 @@ public class PKAddAttachment {
                 "    <ser:addAttachmentsToTaskRequest xmlns:ser=\"http://serviceinterface_v1.b2b.audatex.com\">\n" +
                 "        <ser:parameter>\n" +
                 "            <ser:name>loginId</ser:name>\n" +
-                "            <ser:value>ingo.b2b</ser:value>\n" +
+                "            <ser:value>***</ser:value>\n" +
                 "        </ser:parameter>\n" +
                 "        <ser:parameter>\n" +
                 "            <ser:name>password</ser:name>\n" +
-                "            <ser:value>ingo.b2b</ser:value>\n" +
+                "            <ser:value>***</ser:value>\n" +
                 "        </ser:parameter>\n" +
                 "        <ser:parameter>\n" +
                 "            <ser:name>taskId</ser:name>\n" +
@@ -109,18 +102,9 @@ public class PKAddAttachment {
             e1.printStackTrace();
         }
         String line=rd.readLine();
-      //   System.out.println("Otvet 1 " + line);
+        System.out.println("Otvet 1 " + line);
         String resultAdd = line.substring(line.indexOf("text") + 5, line.indexOf("/text") -1);
         return resultAdd;
-        //Assert.assertEquals(resultStr, "Operation terminated successfully");
-       /*
-           String linea;
-            try {
-                   while ((linea = rd.readLine()) != null)
-                System.out.println("Ответ " + linea);
-                     } catch (IOException e1) {
-            // TODO Auto-generated catch block
-            e1.printStackTrace();
-        }*/
+
     }
 }

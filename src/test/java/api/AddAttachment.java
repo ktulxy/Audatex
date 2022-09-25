@@ -8,9 +8,8 @@ import static data.PKAddAttachment.addAttachmentPK;
 public class AddAttachment {
 
     @Test
-    public void addAttachment() throws Exception {
+    public void AddAttachment() throws Exception {
+
         Assert.assertEquals(addAttachmentPK(),"Operation terminated successfully");
-
-
     }
 }
